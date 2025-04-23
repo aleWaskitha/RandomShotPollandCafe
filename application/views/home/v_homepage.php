@@ -10,5 +10,8 @@
     <a href="<?= base_url('auth/login') ?>">
         <button type="button" id="tombolLihat">Login</button> <br>
     </a> 
+    <a href="<?= base_url('booking/index') ?>">
+        <button type="button" id="tombolLihat">booking</button> <br>
+    </a>
 </body>
 </html>
