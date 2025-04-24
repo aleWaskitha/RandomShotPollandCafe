@@ -74,7 +74,7 @@
                 <!-- Card 1 -->
                 <div class="col-md-4">
                     <div class="card shadow-sm">
-                        <img src="<?= base_url('assets/images/Billiard1.jpg') ?>" class="card-img-top" alt="Billiard Table">
+                        <img src="<?= base_url('assets/images/Billiard table1.jpg') ?>" class="card-img-top" alt="Billiard Table">
                         <div class="card-body bg-dark text-white">
                             <h5 class="card-title">Billiard Table</h5>
                             <p class="card-text">Billiard table kualitas mantap</p>
@@ -87,7 +87,7 @@
                 <!-- Card 2 -->
                 <div class="col-md-4">
                     <div class="card shadow-sm">
-                        <img src="<?= base_url('assets/images/pingPongTable.jpg') ?>" class="card-img-top" alt="Ping Pong Table">
+                        <img src="<?= base_url('assets/images/Ping Pong Table1.jpg') ?>" class="card-img-top" alt="Ping Pong Table">
                         <div class="card-body bg-dark text-white">
                             <h5 class="card-title">Ping Pong Table</h5>
                             <p class="card-text">Disini ada Ping Pong juga looh, ayo pesan sekarang</p>
