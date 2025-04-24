@@ -80,9 +80,9 @@
                 <div class="col-md-6 position-relative d-none d-md-block" style="min-height: 300px;">
                     <img src="<?= base_url('assets/images/kopi1.jpg') ?>" class="rounded shadow"
                         style="width: 300px; height: 300px; object-fit: cover; position: absolute; top: -20px; left: 70px; z-index: 1;">
-                    <img src="<?= base_url('assets/images/rotiBakar.jpg') ?>" class="rounded shadow"
+                    <img src="<?= base_url('assets/images/roti bakar.jpg') ?>" class="rounded shadow"
                         style="width: 300px; height: 300px; object-fit: cover; position: absolute; top: 50px; right: 30px; z-index: 3;">
-                    <img src="<?= base_url('assets/images/indomieGoreng.jpg') ?>" class="rounded shadow"
+                    <img src="<?= base_url('assets/images/Indomie goreng.jpg') ?>" class="rounded shadow"
                         style="width: 300px; height: 300px; object-fit: cover; position: absolute; top: 130px; left: 120px; z-index: 4;">
                 </div>
             </div>
@@ -133,7 +133,7 @@
         <div class="menu-container">
             <!-- makanan 1 -->
             <div class="card">
-                <img src="<?= base_url('assets/images/indomieGoreng.jpg') ?>" alt="Indomie Goreng">
+                <img src="<?= base_url('assets/images/Indomie goreng.jpg') ?>" alt="Indomie Goreng">
                 <h3>Indomie Goreng</h3>
                 <p>Mi goreng khas warkop dengan topping telur dan sedikit sambal, bikin nagih setiap suapan.</p>
                 <p>Rp. 5000</p>
@@ -141,7 +141,7 @@
 
             <!-- makanan 2 -->
             <div class="card">
-                <img src="<?= base_url('assets/images/indomieRebus.jpg') ?>" alt="Indomie Goreng">
+                <img src="<?= base_url('assets/images/indomie rebus.jpg') ?>" alt="Indomie Goreng">
                 <h3>Indomie Rebus</h3>
                 <p>Disajikan hangat dengan kuah gurih dan tambahan daun bawang, cocok dinikmati saat santai.</p>
                 <p>Rp. 5000</p>
@@ -149,7 +149,7 @@
 
             <!-- makanan 3 -->
             <div class="card">
-                <img src="<?= base_url('assets/images/rotiBakar.jpg') ?>" alt="Indomie Goreng">
+                <img src="<?= base_url('assets/images/roti bakar.jpg') ?>" alt="Indomie Goreng">
                 <h3>Roti Bakar</h3>
                 <p>Roti bakar garing di luar, lumer coklat dan keju di dalam</p>
                 <p>Rp. 8000</p>
@@ -157,7 +157,7 @@
 
             <!-- makanan 4 -->
             <div class="card">
-                <img src="<?= base_url('assets/images/nasiGoreng.jpg') ?>" alt="Indomie Goreng">
+                <img src="<?= base_url('assets/images/nasi goreng.jpg') ?>" alt="Indomie Goreng">
                 <h3>Nasi Goreng</h3>
                 <p>Nasi goreng rumahan dengan campuran telur, sayur, dan bumbu khas warkop.</p>
                 <p>Rp. 10000</p>
