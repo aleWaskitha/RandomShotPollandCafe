@@ -74,11 +74,11 @@
 
                 <!-- Image Stack -->
                 <div class="col-md-6 position-relative d-none d-md-block" style="min-height: 300px;">
-                    <img src="<?= base_url('assets/images/billiardGame1.jpg') ?>" class="rounded shadow"
+                    <img src="<?= base_url('assets/images/billiard game1.jpg') ?>" class="rounded shadow"
                         style="width: 300px; height: 300px; object-fit: cover; position: absolute; top: -20px; left: 70px; z-index: 1;">
-                    <img src="<?= base_url('assets/images/billiardGame2.jpg') ?>" class="rounded shadow"
+                    <img src="<?= base_url('assets/images/billiard game2.jpg') ?>" class="rounded shadow"
                         style="width: 300px; height: 300px; object-fit: cover; position: absolute; top: 50px; right: 30px; z-index: 3;">
-                    <img src="<?= base_url('assets/images/billiardGame3.jpg') ?>" class="rounded shadow"
+                    <img src="<?= base_url('assets/images/billiard game3.jpg') ?>" class="rounded shadow"
                         style="width: 300px; height: 300px; object-fit: cover; position: absolute; top: 130px; left: 120px; z-index: 4;">
                 </div>
             </div>
