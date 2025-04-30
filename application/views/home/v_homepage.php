@@ -22,39 +22,39 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-4">
-        <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="<?= base_url('homepage/index') ?>">Random Shot</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                <ul class="navbar-nav text-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="<?= base_url('homepage/index') ?>">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="About.php">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
-                        </a>
-                        <ul class="dropdown-menu text-center" aria-labelledby="servicesDropdown">
-                            <li><a class="dropdown-item" href="<?= base_url('homepage/billiard') ?>">Billiard Table</a></li>
-                            <li><a class="dropdown-item" href="<?= base_url('homepage/pingpong') ?>">Table Tennis</a></li>
-                            <li><a class="dropdown-item" href="<?= base_url('homepage/menu') ?>">Cafe</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-none d-lg-block">
-                <button class="btn btn-light btn-signin ms-auto"><i class="bi bi-person"></i> Sign In</button>
-            </div>
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="<?= base_url('homepage/index') ?>">Random Shot</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="<?= base_url('homepage/index') ?>">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.php">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu text-center" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="<?= base_url('homepage/billiard') ?>">Billiard Table</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url('homepage/pingpong') ?>">Table Tennis</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url('homepage/menu') ?>">Cafe</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('homepage/contact') ?>" target="_blank">Contact</a>
+                </li>
+            </ul>
         </div>
+        <div class="d-none d-lg-block">
+            <button class="btn btn-light btn-signin ms-auto"><i class="bi bi-person"></i> Sign In</button>
+        </div>
+    </div>
     </nav>
 
     <!-- Hero Section -->
@@ -114,7 +114,7 @@
         </div>
     </section>
 
-    <section style="background-color: #292929; color: white; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;">
+    <section style="background-color: #191919; color: white; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;">
         <div class="container py-5" style="min-height: 500px; position: relative; z-index: 2;">
             <div class="row">
                 <!-- Text Side -->
@@ -175,13 +175,10 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>KONTAK</h3>
+                <h3>FOLLOW US</h3>
                 <ul>
                     <li><i class="bi bi-instagram"></i> <a href="https://instagram.com/rspoolcafe.bgr" target="_blank">@rspoolcafe.bgr</a></li>
                     <li><i class="bi bi-tiktok"></i> <a href="https://www.tiktok.com/@rspoolcafe.bgr?lang=en" target="_blank">@rspoolcafe.bgr</a></li>
-                    <li><i class="bi bi-envelope"></i> <a href="mailto:randomshot@email.com">randomshot@email.com</a></li>
-                    <li><i class="bi bi-whatsapp"></i> <a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></li>
-                </ul>
             </div>
             <div class="footer-column">
                 <h3>SERVICES</h3>
