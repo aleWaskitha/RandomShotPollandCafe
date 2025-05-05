@@ -9,6 +9,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+<<<<<<< HEAD
 .btn-signin {
     border-radius: 20px;
     padding: 6px 16px;
@@ -32,6 +33,11 @@ body {
 .hero-section {
     height: 100vh;
     background: url('../images/assetcafe1.png') center center / cover no-repeat;
+=======
+.hero-section {
+    height: 100vh;
+    background: url('asset/assetcafe2.png') center center / cover no-repeat;
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,4 +240,8 @@ h2 {
 
 .footer-column a:hover {
     text-decoration: underline;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b

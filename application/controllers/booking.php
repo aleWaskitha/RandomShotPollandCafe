@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 class Booking extends CI_Controller{
@@ -90,4 +91,13 @@ class Booking extends CI_Controller{
         }
     }
 }
+=======
+<?php
+
+class Booking extends CI_Controller{
+    public function index(){
+        $this->load->view('booking/v_booking');
+    }
+}
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
 ?>

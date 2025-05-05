@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="id">
+<<<<<<< HEAD
+=======
+
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -16,7 +20,49 @@
 
     <link rel="stylesheet" href="<?= base_url('assets/css/css_homepage.css') ?>">
 </head>
+
 <body>
+<<<<<<< HEAD
+=======
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top px-4">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="<?= base_url('homepage/index') ?>">Random Shot</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="<?= base_url('homepage/index') ?>">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.php">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu text-center" aria-labelledby="servicesDropdown">
+                        <li><a class="dropdown-item" href="<?= base_url('homepage/billiard') ?>">Billiard Table</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url('homepage/pingpong') ?>">Table Tennis</a></li>
+                        <li><a class="dropdown-item" href="<?= base_url('homepage/menu') ?>">Cafe</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="<?= base_url('homepage/contact') ?>" target="_blank">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="d-none d-lg-block">
+            <button class="btn btn-light btn-signin ms-auto"><i class="bi bi-person"></i> Sign In</button>
+        </div>
+    </div>
+    </nav>
+
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-overlay"></div>
@@ -27,7 +73,11 @@
     </section>
 
     <!-- Section Our Services -->
+<<<<<<< HEAD
     <section id="ourServices" class="our-services py-5">
+=======
+    <section class="our-services py-5">
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
         <div class="container">
             <h2 class="text-center mb-5">Our Services</h2>
             <div class="row">
@@ -74,7 +124,11 @@
         </div>
     </section>
 
+<<<<<<< HEAD
     <section style="background-color: #292929; color: white; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;">
+=======
+    <section style="background-color: #191919; color: white; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;">
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
         <div class="container py-5" style="min-height: 500px; position: relative; z-index: 2;">
             <div class="row">
                 <!-- Text Side -->
@@ -117,7 +171,49 @@
             </div>
         </div>
     </section>
+<<<<<<< HEAD
+=======
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-brand">
+            <h2>RANDOM SHOT</h2>
+            <p>Billiard, Ping Pong & Cafe dalam satu tempat. Tempat asik buat healing dan nongkrong bareng.</p>
+        </div>
+        <div class="footer-main">
+            <div class="footer-column">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li><a href="<?= base_url('homepage/index') ?>">Home</a></li>
+                    <li><a href="about.php">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>FOLLOW US</h3>
+                <ul>
+                    <li><i class="bi bi-instagram"></i> <a href="https://instagram.com/rspoolcafe.bgr" target="_blank">@rspoolcafe.bgr</a></li>
+                    <li><i class="bi bi-tiktok"></i> <a href="https://www.tiktok.com/@rspoolcafe.bgr?lang=en" target="_blank">@rspoolcafe.bgr</a></li>
+            </div>
+            <div class="footer-column">
+                <h3>SERVICES</h3>
+                <ul>
+                    <li><a href="<?= base_url('homepage/billiard') ?>">Billiard Table</a></li>
+                    <li><a href="<?= base_url('homepage/pingpong') ?>">Table Tennis</a></li>
+                    <li><a href="<?= base_url('homepage/menu') ?>">Cafe</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        &copy; 2025 Random Shot. All Rights Reserved.
+    </div>
+
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

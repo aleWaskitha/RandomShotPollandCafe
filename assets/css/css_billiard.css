@@ -9,6 +9,7 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+<<<<<<< HEAD
 .btn-signin {
     border-radius: 20px;
     padding: 6px 16px;
@@ -25,12 +26,18 @@ body {
 .hero-section {
     height: 100vh;
     background: url('../images/Billiard\ table2.jpg') center center / cover no-repeat;
+=======
+.hero-section {
+    height: 100vh;
+    background: url('asset/billiard\ table2.jpg') center center / cover no-repeat;
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
 }
 
+<<<<<<< HEAD
 #directRegister {
     color: black;
     text-decoration: none;
@@ -38,6 +45,8 @@ body {
     text-align: center;
 }
 
+=======
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -88,7 +97,11 @@ body {
     max-width: 1100px;
     margin: 0 auto;
     gap: 40px;
+<<<<<<< HEAD
 }
+=======
+        }
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
 
 .booking-left {
     flex: 1 1 50%;
@@ -253,4 +266,8 @@ body {
 
 .footer-column a:hover {
     text-decoration: underline;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
