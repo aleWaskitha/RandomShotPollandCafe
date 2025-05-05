@@ -1,0 +1,237 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-signin {
+    border-radius: 20px;
+    padding: 6px 16px;
+}
+
+#directRegister {
+    color: black;
+    text-decoration: none;
+    line-height: 2;
+    text-align: center;
+}
+
+#fotoProfil{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('../images/assetcafe1.png') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    color: white;
+}
+
+.hero-content h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+section {
+    padding: 2em;
+}
+
+h2 {
+    text-align: center;
+    /* Membuat teks berada di tengah */
+    font-size: 2.5rem;
+    /* Memperbesar ukuran teks */
+    font-weight: bold;
+    /* Membuat teks lebih tebal */
+    margin-bottom: 30px;
+    /* Memberikan jarak bawah */
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    /* Memberikan warna oranye pada teks */
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    /* 4 card per baris, dengan jarak antar card */
+    box-sizing: border-box;
+    /* Memastikan padding tidak memengaruhi ukuran */
+    background: white;
+    /* Warna latar belakang card */
+    border-radius: 8px;
+    /* Membuat sudut card melengkung */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Memberikan bayangan */
+    text-align: left;
+    /* Memusatkan teks */
+    padding: 16px;
+    /* Memberikan padding di dalam card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animasi untuk transformasi dan bayangan */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Bayangan default */
+
+}
+
+.card p:last-child {
+    color: gray;
+    /* Mengubah warna teks harga menjadi abu-abu */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Membesarkan card sedikit */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* Menambah bayangan saat hover */
+}
+
+.card img {
+    width: 100%;
+    /* Gambar memenuhi lebar card */
+    height: 50%;
+    /* Menjaga rasio gambar */
+    border-radius: 8px;
+    /* Membuat sudut gambar melengkung */
+}
+
+.custom-white {
+    background-color: #FFFFFF;
+    color: black;
+    border: none;
+}
+
+.custom-white:hover {
+    background-color: black;
+    /* warna saat hover */
+}
+
+.menu-section {
+    background-color: #201f1f;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    background-color: #353535;
+    color: #fff;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    background-color: #035f2b;
+    color: #fff;
+    padding: 20px;
+    flex: 1 1 250px;
+}
+
+.footer-main {
+    display: flex;
+    flex: 3 1 600px;
+    justify-content: space-between;
+    padding-left: 30px;
+    gap: 30px;
+    border-left: 2px solid #333;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+    border-left: 1px solid #333;
+}
+
+.footer-column:first-child {
+    border-left: none;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #035f2b;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #444;
+    font-size: 14px;
+}
+
+.footer-column ul li:last-child {
+    border-bottom: none;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+    color: #035f2b;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #292929;
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease-in-out;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}

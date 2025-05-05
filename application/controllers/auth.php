@@ -4,11 +4,10 @@ class Auth extends CI_Controller{
 
     public function __construct() {
         parent::__construct();
-        $this->load->library('form_validation');
         $this->load->model('m_auth');
     }
 
-    public function login(){
+    public function index(){
         $this->form_validation->set_rules('username', 'Username', 
         'required|trim');
         $this->form_validation->set_rules('password', 'Password', 
@@ -28,15 +27,20 @@ class Auth extends CI_Controller{
         $result = $this->m_auth->check_login($username, $password);
 
         if ($result) {
-            $this->session->set_userdata([
+            $data = [
                 'username' => $result['Username'],
                 'role_id'  => $result['Role_id']
-            ]);
-            redirect('homepage/index');
+            ];
+            $this->session->set_userdata($data);
+            if ($result['Role_id'] == 1) {
+                redirect('admin/index');
+            } else {
+                redirect('homepage/index');
+            }
         } else {
             $this->session->set_flashdata('message', 
                 '<div id="failLogin">Invalid username or password!</div>');
-            redirect('auth/login');
+            redirect('auth/index');
         }
     }
 
@@ -64,15 +68,21 @@ class Auth extends CI_Controller{
                 'Username'      => htmlspecialchars($this->input->post('username', true)),
                 'Email'         => htmlspecialchars($this->input->post('email', true)),
                 'Password'      => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
-                'is_active'     => 1,
+                'Image'         => 'default.jpg',
                 'date_created'  => date('Y-m-d')
             ];
 
             $this->m_auth->registration($data);
             $this->session->set_flashdata('message', 
             '<div id="successRegist">Success to create account! Please Login</div>');
-            redirect('auth/login');
+            redirect('auth/index');
         }
+    }
+
+    public function logout(){
+        $this->session->unset_userdata('username');
+        $this->session->unset_userdata('role_id');
+            redirect('homepage/index');
     }
 }
 ?>

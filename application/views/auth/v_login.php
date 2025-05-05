@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Akun Random Shot</title>
-    <link rel="stylesheet" href="<?= base_url('assets/css/css_login.css') ?>" >
+    <link rel="stylesheet" href="<?= base_url('assets/css/css_auth.css') ?>" >
 </head>
 <body>
     <div>
-        <form method="POST" action="<?php echo base_url().'auth/login'; ?>" id="formulir">
+        <form method="POST" action="<?php echo base_url().'auth/index'; ?>" id="login">
             <img src="<?= base_url('assets/images/billLogin.png') ?>" width="40%" class="foto">    
             <h1>Login</h1>
             <?= $this->session->flashdata('message'); ?>
@@ -27,11 +27,11 @@
                 </div>
                 <div id="akun">
                     don't have an account? 
-                    <a href="<?= base_url('auth/registration') ?>" id="register">
+                    <a href="<?= base_url('auth/registration') ?>" id="directRegister">
                         Register here
                     </a> 
                 </div>
-                <button type="submit" id="login">Login</button> <br>
+                <button type="submit" id="buttonLogin">Login</button> <br>
             </div>
         </form>
     </div>
