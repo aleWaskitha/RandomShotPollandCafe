@@ -17,6 +17,11 @@
         <form action="<?php echo base_url().'booking/bookBilliard'; ?>" method="POST" id="formulirBilliard">
             <h1 id="judul">Booking Tempat</h1>
             <h2 id="subJudul">B i l l i a r d</h2> 
+            <?php if ($this->session->flashdata('message')): ?>
+                <div class="alert alert-success" role="alert">
+                    <?= $this->session->flashdata('message'); ?>
+                </div>
+            <?php endif; ?>
             <div id="booking">
                 <div>
                     <label>Nama Lengkap</label>

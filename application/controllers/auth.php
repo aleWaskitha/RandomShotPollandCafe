@@ -33,14 +33,14 @@ class Auth extends CI_Controller{
             ];
             $this->session->set_userdata($data);
             if ($result['Role_id'] == 1) {
-                redirect('admin/index');
+                redirect('admin');
             } else {
-                redirect('homepage/index');
+                redirect('homepage/booking');
             }
         } else {
             $this->session->set_flashdata('message', 
                 '<div id="failLogin">Invalid username or password!</div>');
-            redirect('auth/index');
+            redirect('auth');
         }
     }
 
@@ -68,21 +68,19 @@ class Auth extends CI_Controller{
                 'Username'      => htmlspecialchars($this->input->post('username', true)),
                 'Email'         => htmlspecialchars($this->input->post('email', true)),
                 'Password'      => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
-                'Image'         => 'default.jpg',
                 'date_created'  => date('Y-m-d')
             ];
 
             $this->m_auth->registration($data);
             $this->session->set_flashdata('message', 
             '<div id="successRegist">Success to create account! Please Login</div>');
-            redirect('auth/index');
+            redirect('auth');
         }
     }
 
     public function logout(){
-        $this->session->unset_userdata('username');
-        $this->session->unset_userdata('role_id');
-            redirect('homepage/index');
+        $this->session->sess_destroy();
+            redirect('homepage');
     }
 }
 ?>

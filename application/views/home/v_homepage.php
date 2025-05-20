@@ -75,9 +75,13 @@
     <!-- Section Our Services -->
 <<<<<<< HEAD
     <section id="ourServices" class="our-services py-5">
+<<<<<<< HEAD
 =======
     <section class="our-services py-5">
 >>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
+=======
+    <section class="our-services py-5">
+>>>>>>> 6fc9250 (final)
         <div class="container">
             <h2 class="text-center mb-5">Our Services</h2>
             <div class="row">
@@ -125,10 +129,14 @@
     </section>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <section style="background-color: #292929; color: white; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;">
 =======
     <section style="background-color: #191919; color: white; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;">
 >>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
+=======
+    <section style="background-color:rgb(19, 19, 19); color: white; font-family: 'Poppins', sans-serif; position: relative; overflow: hidden;">
+>>>>>>> 6fc9250 (final)
         <div class="container py-5" style="min-height: 500px; position: relative; z-index: 2;">
             <div class="row">
                 <!-- Text Side -->

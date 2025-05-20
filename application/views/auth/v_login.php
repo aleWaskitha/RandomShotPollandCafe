@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Akun Random Shot</title>
+    <title>Login - Random Shot</title>
     <link rel="stylesheet" href="<?= base_url('assets/css/css_auth.css') ?>" >
 </head>
 <body>
     <div>
-        <form method="POST" action="<?php echo base_url().'auth/index'; ?>" id="login">
+        <form method="POST" action="<?php echo base_url().'auth'; ?>" id="login">
             <img src="<?= base_url('assets/images/billLogin.png') ?>" width="40%" class="foto">    
             <h1>Login</h1>
             <?= $this->session->flashdata('message'); ?>

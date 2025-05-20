@@ -40,7 +40,8 @@
                                         Total User
                                     </div>
                                     <div class="card-body">
-                                        <h1><?= $count_user; ?></h1>
+                                        <h1><?= $count_user;
+                                        ?></h1>
                                     </div>
                                 </div>
                             </div>
@@ -53,9 +54,7 @@
                                         Booking Chart
                                     </div>
                                     <div class="card-body">
-                                        <canvas id="myAreaChart" width="100%" height="40">
-                                        
-                                        </canvas>
+                                        <canvas id="myAreaChart" data-labels='<?= $labels ?>' data-data='<?= $data ?>' width="100%" height="40"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -74,7 +73,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="<?= base_url('assets/js/scripts.js') ?>"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="<?= base_url('assets/js/chart-area-demo.js') ?>"></script>
+        <script src="<?= base_url('assets/js/chartWeekly.js') ?>"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="<?= base_url('assets/js/datatables-simple-demo.js') ?>"></script>
     </body>

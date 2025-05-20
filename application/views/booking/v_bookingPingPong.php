@@ -17,6 +17,11 @@
         <form action="<?php echo base_url().'booking/bookPingpong'; ?>" method="POST" id="formulirPingpong">
             <h1 id="judul">Booking Tempat</h1>
             <h2 id="subJudul">P i n g P o n g</h2> 
+            <?php if ($this->session->flashdata('message')): ?>
+                <div class="alert alert-success" role="alert">
+                    <?= $this->session->flashdata('message'); ?>
+                </div>
+            <?php endif; ?>
             <div id="booking">
                 <div>
                     <label>Nama Lengkap</label>

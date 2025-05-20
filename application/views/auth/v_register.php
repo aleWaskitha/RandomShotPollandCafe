@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Akun Random Shot</title>
+    <title>Register - Random Shot</title>
     <link rel="stylesheet" href="<?= base_url('assets/css/css_auth.css') ?>" >
 </head>
 <body>
@@ -36,7 +36,7 @@
             </div>
             <div id="akun">
                 already have an account? 
-                <a href="<?= base_url('auth/index') ?>" id="directLogin">
+                <a href="<?= base_url('auth') ?>" id="directLogin">
                     Login here
                 </a> 
             </div>

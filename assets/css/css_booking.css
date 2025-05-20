@@ -48,7 +48,7 @@ body{
     border: 1px;
     box-sizing: border-box;
     position: relative;
-    height: 700px;
+    height: 750px;
 }
 
 #slideshowPingpong {
@@ -63,7 +63,7 @@ body{
     border: 1px;
     box-sizing: border-box;
     position: relative;
-    height: 620px;
+    height: 670px;
 }
 
 #image {
@@ -82,7 +82,7 @@ body{
     border: 1px;
     box-sizing: border-box;
     position: relative;
-    height: 620px;
+    height: 670px;
 }
 
 #formulirBilliard {
@@ -96,7 +96,7 @@ body{
     border: 1px;
     box-sizing: border-box;
     position: relative;
-    height: 700px;
+    height: 750px;
 }
 
 #judul {
@@ -207,39 +207,62 @@ button:hover {
 background-color: #2F4F4F;
 }
 
-@media screen and (max-width: 768px) {
-    body {
+/* Untuk layar maksimal 768px (tablet) */
+@media (max-width: 768px) {
+    #formBox {
         flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
     }
 
-    #formulir, #foto {
+    #slideshowBilliard,
+    #slideshowPingpong,
+    #formulirBilliard,
+    #formulirPingpong {
         width: 100%;
         height: auto;
+        border-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 20px;
     }
 
-    #foto {
-        padding: 20px 0;
+    #formulirBilliard,
+    #formulirPingpong {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    #buttonBooking {
+        position: static;
         width: 100%;
-        object-fit: cover;
+        margin-top: 20px;
+    }
+
+    .waktuMeja {
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 480px) {
-    body {
-        flex-direction: column;
+/* Untuk layar maksimal 480px (ponsel) */
+@media (max-width: 480px) {
+    #judul {
+        font-size: 28px;
     }
 
-    #formulir, #foto {
-        width: 100%;
-        height: auto;
+    #subJudul {
+        font-size: 20px;
     }
 
-    #foto {
-        padding: 20px 0;
+    #formBox {
         width: 100%;
-        object-fit: cover;
+        margin: 15px auto;
     }
-=======
+
 body{
     background: linear-gradient(to right, #2C3930,rgb(107, 134, 116));
     display: flex;
@@ -422,5 +445,30 @@ background-color: #2F4F4F;
         width: 100%;
         object-fit: cover;
     }
->>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
+}
+    .resForm,
+    .catatan,
+    .waktuMeja {
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    #buttonBooking {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    #fotoProfil {
+        width: 32px;
+        height: 32px;
+    }
+
+    .btn-signin {
+        padding: 5px 12px;
+        font-size: 13px;
+    }
 }

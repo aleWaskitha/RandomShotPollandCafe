@@ -35,5 +35,24 @@ class M_booking extends CI_Model{
         $this->db->where('Tanggal <', $date);
         return $this->db->get('list_booking')->result_array();
     }
+
+    public function getChartWeekly() {
+        $this->db->select("DATE(Tanggal) as Tanggal, COUNT(*) as total");
+        $this->db->group_by("DATE(Tanggal)");
+        $query = $this->db->get("list_booking");
+        return $query->result_array();
+    }
+
+    public function getChartMonthly() {
+        $this->db->select("MONTH(Tanggal) as Month, COUNT(*) as total");
+        $this->db->group_by("MONTH(Tanggal)");
+        $query = $this->db->get("list_booking");
+        return $query->result_array();
+    }
+
+    public function getData($username) {
+        $this->db->where('Username', $username);
+        return $this->db->get('list_booking')->result_array();
+    }
 }
 ?>

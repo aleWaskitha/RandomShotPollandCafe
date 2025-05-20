@@ -21,6 +21,11 @@ class M_auth extends CI_Model{
         }
         return false;
     }
+    
+    public function getData($username) {
+        $this->db->where('Username', $username);
+        return $user = $this->db->get('account_user')->row_array();
+    }
 
     public function countUser() {
         return $this->db->count_all_results('account_user');

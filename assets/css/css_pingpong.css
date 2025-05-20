@@ -9,7 +9,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-<<<<<<< HEAD
 .btn-signin {
     border-radius: 20px;
     padding: 6px 16px;
@@ -33,11 +32,11 @@ body {
 .hero-section {
     height: 100vh;
     background: url('../images/ping\ pong4.jpg') center center / cover no-repeat;
-=======
+}
+
 .hero-section {
     height: 100vh;
     background: url('asset/ping\ pong4.jpg') center center / cover no-repeat;
->>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,14 +176,14 @@ body {
 
 .footer {
     display: flex;
-    background-color: #353535;
+    background-color: #151515;
     color: #fff;
     padding: 40px 20px;
     flex-wrap: wrap;
 }
 
 .footer-brand {
-    background-color: #035f2b;
+    background-color: #05be55;
     color: #fff;
     padding: 20px;
     flex: 1 1 250px;
@@ -214,7 +213,7 @@ body {
 .footer-column h3 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #035f2b;
+    color: #05be55;
 }
 
 .footer-column ul {
@@ -241,13 +240,13 @@ body {
 
 .footer-column ul li a:hover {
     text-decoration: underline;
-    color: #035f2b;
+    color: #05be55;
 }
 
 .footer-bottom {
     text-align: center;
     padding: 10px 0;
-    background-color: #292929;
+    background-color: #212529;
     color: #fff;
     font-size: 14px;
 }
@@ -260,8 +259,86 @@ body {
 
 .footer-column a:hover {
     text-decoration: underline;
-<<<<<<< HEAD
 }
-=======
+
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .booking-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .booking-left, .booking-right {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .booking-card {
+        padding: 30px 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .footer-column {
+        border-left: none;
+        padding: 10px 0;
+    }
 }
->>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
+
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn-booking {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .booking-card {
+        padding: 20px 15px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-column ul li {
+        font-size: 13px;
+    }
+
+    #fotoProfil {
+        width: 35px;
+        height: 35px;
+    }
+
+    .btn-signin {
+        padding: 5px 12px;
+        font-size: 14px;
+    }
+}

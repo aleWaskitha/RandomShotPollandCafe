@@ -36,7 +36,7 @@ class Booking extends CI_Controller{
         $waktuBooking = $jamMulai ." - " . $jamAkhir;
 
         if($this->form_validation->run() == false) {
-            $this->load->view('booking/billiard');
+            redirect('booking/billiard');
         } else {
             $data = [
                 'Username'          => ($this->session->userdata('username')),
@@ -52,7 +52,7 @@ class Booking extends CI_Controller{
         $this->m_booking->booking($data);
         $this->session->set_flashdata('message', 
         '<div id="successBooking">Success to booking a place!</div>');
-        redirect('homepage/index');
+        redirect('booking/billiard');
         }
     }
 
@@ -71,7 +71,7 @@ class Booking extends CI_Controller{
         $waktuBooking = $jamMulai ." - " . $jamAkhir;
 
         if($this->form_validation->run() == false) {
-            $this->load->view('booking/pingpong');
+            redirect('booking/pingpong');
         } else {
             $data = [
                 'Username'          => ($this->session->userdata('username')),
@@ -87,7 +87,7 @@ class Booking extends CI_Controller{
         $this->m_booking->booking($data);
         $this->session->set_flashdata('message', 
         '<div id="successBooking">Success to booking a place!</div>');
-        redirect('homepage/index');
+        redirect('booking/pingpong');
         }
     }
 }

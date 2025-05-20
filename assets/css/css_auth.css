@@ -169,31 +169,157 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-    body {
+     body {
         flex-direction: column;
+        padding: 10px;
     }
 
-    #formulir {
+    #register {
+        background-image: url('../images/bgLogin.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: 750px 580px;
+        background-color: white;
+        border-style: inset;
         width: 100%;
-        height: auto;
+        padding: 20px;
+        border: 1px;
+        border-radius: 10px; 
+        box-sizing: border-box;
+        position: relative;
+        margin: 50px auto;
+    }
+    
+    #login {
+        background-image: url('../images/bgLogin.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: top;
+        background-size: 750px 450px;
+        background-color: white;
+        border-style: inset;
+        width: 100%;
+        padding: 30px;
+        border: 1px;
+        border-radius: 10px; 
+        box-sizing: border-box;
+        position: relative;
+        margin: 50px auto;
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 26px;
+        text-align: center;
     }
 
-    h2 {
-        font-size: 23px;
+    .foto {
+        padding-left: 200px;
+        text-align: center;
+    }
+
+    .resForm {
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    #buttonRegister, #buttonLogin {
+        margin-top: 150px;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #akun, #directRegister, #directLogin {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    #successRegist, #failLogin {
+        font-size: 13px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    ::placeholder {
+        font-size: 12px;
     }
 }
 
 @media screen and (max-width: 480px) {
     body {
         flex-direction: column;
+        padding: 10px;
     }
 
-    #formulir {
+    #register {
+        background-image: url('../images/bgLogin.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: 360px 450px;
+        background-color: white;
+        border-style: inset;
         width: 100%;
-        height: auto;
+        padding: 20px;
+        border: 1px;
+        border-radius: 10px; 
+        box-sizing: border-box;
+        position: relative;
+        margin: 50px auto;
+    }
+    
+    #login {
+        background-image: url('../images/bgLogin.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: top;
+        background-size: 430px 315px;
+        background-color: white;
+        border-style: inset;
+        width: 100%;
+        padding: 30px;
+        border: 1px;
+        border-radius: 10px; 
+        box-sizing: border-box;
+        position: relative;
+        margin: 50px auto;
+    }
+
+    h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .foto {
+        padding-left: 90px;
+        text-align: center;
+    }
+
+    .resForm {
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    #buttonRegister, #buttonLogin {
+        margin-top: 100px;
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    #akun, #directRegister, #directLogin {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    #successRegist, #failLogin {
+        font-size: 13px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    ::placeholder {
+        font-size: 12px;
     }
 }

@@ -31,6 +31,38 @@ class Homepage extends CI_Controller{
         $this->load->view('templates/footer');
     }
 
+    public function booking(){
+        $this->load->view('templates/navbar');
+        $this->load->view('home/v_directbooking');
+        $this->load->view('templates/footer');
+    }
+
+    public function profilePage(){
+        if (!$this->session->userdata('username')){
+            redirect('auth');
+        }
+
+        $this->load->model('m_auth');
+        $username = $this->session->userdata('username');
+        $data['users'] = $this->m_auth->getData($username);
+
+        $this->load->view('templates/navbar');
+        $this->load->view('home/v_profilepage', $data);
+    }
+
+    public function historyBooking(){
+        if (!$this->session->userdata('username')){
+            redirect('auth');
+        }
+        
+        $this->load->model('m_booking');
+        $username = $this->session->userdata('username');
+        $data['data_booking'] = $this->m_booking->getData($username);
+
+        $this->load->view('templates/navbar');
+        $this->load->view('home/v_historyBookingUsers', $data);
+    }
+
     public function blocked(){
         $this->load->view('home/v_access403');
     }

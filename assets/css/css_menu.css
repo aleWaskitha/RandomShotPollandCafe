@@ -9,7 +9,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-<<<<<<< HEAD
 .btn-signin {
     border-radius: 20px;
     padding: 6px 16px;
@@ -22,7 +21,7 @@ body {
     text-align: center;
 }
 
-#fotoProfil{
+#fotoProfil {
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -33,11 +32,9 @@ body {
 .hero-section {
     height: 100vh;
     background: url('../images/assetcafe1.png') center center / cover no-repeat;
-=======
-.hero-section {
+    .hero-section {
     height: 100vh;
     background: url('asset/assetcafe2.png') center center / cover no-repeat;
->>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,7 +98,7 @@ h2 {
     /* 4 card per baris, dengan jarak antar card */
     box-sizing: border-box;
     /* Memastikan padding tidak memengaruhi ukuran */
-    background: white;
+    background: #212529;
     /* Warna latar belakang card */
     border-radius: 8px;
     /* Membuat sudut card melengkung */
@@ -115,11 +112,18 @@ h2 {
     /* Animasi untuk transformasi dan bayangan */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* Bayangan default */
+}
 
+.card h3 {
+    color: white;
+}
+
+.card p {
+    color: white;
 }
 
 .card p:last-child {
-    color: gray;
+    color: #05be55b6;
     /* Mengubah warna teks harga menjadi abu-abu */
 }
 
@@ -146,25 +150,25 @@ h2 {
 }
 
 .custom-white:hover {
-    background-color: black;
+    background-color: #05be55;
     /* warna saat hover */
 }
 
 .menu-section {
-    background-color: #201f1f;
+    background-color: #0d0d0d;
 }
 
 /* footer */
 .footer {
     display: flex;
-    background-color: #353535;
+    background-color: #151515;
     color: #fff;
     padding: 40px 20px;
     flex-wrap: wrap;
 }
 
 .footer-brand {
-    background-color: #035f2b;
+    background-color: #05be55;
     color: #fff;
     padding: 20px;
     flex: 1 1 250px;
@@ -194,7 +198,7 @@ h2 {
 .footer-column h3 {
     margin-bottom: 10px;
     font-size: 18px;
-    color: #035f2b;
+    color: #05be55;
 }
 
 .footer-column ul {
@@ -221,13 +225,13 @@ h2 {
 
 .footer-column ul li a:hover {
     text-decoration: underline;
-    color: #035f2b;
+    color: #05be55;
 }
 
 .footer-bottom {
     text-align: center;
     padding: 10px 0;
-    background-color: #292929;
+    background-color: #212529;
     color: #fff;
     font-size: 14px;
 }
@@ -240,8 +244,127 @@ h2 {
 
 .footer-column a:hover {
     text-decoration: underline;
-<<<<<<< HEAD
 }
-=======
 }
->>>>>>> da7376727574ff11c8e0edfc4337ce83fc570c8b
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    .hero-section {
+        height: 70vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 1.5em 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        height: 60%;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        padding: 0 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .footer-column:first-child {
+        border-left: none;
+    }
+
+    .footer-bottom {
+        padding: 10px 0;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 5px;
+    }
+
+    .hero-section {
+        height: 60vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 1em 0;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        height: 50%;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        padding: 0 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .footer-column:first-child {
+        border-left: none;
+    }
+
+    .footer-bottom {
+        padding: 8px 0;
+        font-size: 12px;
+    }
+}

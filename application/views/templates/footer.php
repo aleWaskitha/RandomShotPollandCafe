@@ -7,7 +7,7 @@
             <div class="footer-column">
                 <h3>QUICK LINKS</h3>
                 <ul>
-                    <li><a href="<?= base_url('homepage/index') ?>">Home</a></li>
+                    <li><a href="<?= base_url('homepage') ?>">Home</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="<?= base_url('homepage/about') ?>">About</a></li>
                 </ul>

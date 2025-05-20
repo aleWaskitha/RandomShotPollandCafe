@@ -44,18 +44,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-4">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-file-alt"></i>
-                                        Download Excel
-                                    </div>
-                                    <div class="card-body">
-                                        <button class="download">Download Report</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="row">
                             <div class="col-xl-10">
                                 <div class="card mb-4">
@@ -64,9 +52,7 @@
                                         Booking Chart Month
                                     </div>
                                     <div class="card-body">
-                                        <canvas id="myAreaChart" width="100%" height="40">
-                                        
-                                        </canvas>
+                                        <canvas id="myAreaChart" data-labels='<?= $labels ?>' data-data='<?= $data ?>'  width="100%" height="40"></canvas>
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +71,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="<?= base_url('assets/js/scripts.js') ?>"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
-        <script src="<?= base_url('assets/js/chart-area-demo.js') ?>"></script>
+        <script src="<?= base_url('assets/js/chartMonthly.js') ?>"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
         <script src="<?= base_url('assets/js/datatables-simple-demo.js') ?>"></script>
     </body>

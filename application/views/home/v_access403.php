@@ -22,7 +22,7 @@
                                     <h1 class="display-1">403</h1>
                                     <p class="lead">Unauthorized</p>
                                     <p>Access to this resource is denied.</p>
-                                    <a href="<?= base_url('homepage/index') ?>">
+                                    <a href="<?= base_url('homepage') ?>">
                                         <i class="fa-solid fa-arrow-left"></i>
                                         Return to Homepage
                                     </a>
